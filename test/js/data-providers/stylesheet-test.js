@@ -16,6 +16,7 @@ module('Data Provider: stylesheet', {
         this.config = {
             id: 'VIEWER-ID',
             url: '',
+            urlMutation: function(url) { return url; },
             template: {
                 css: 'stylesheet.css'
             },

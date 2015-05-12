@@ -46,7 +46,7 @@ Crocodoc.addDataProvider('metadata', function(scope) {
          */
         getURL: function () {
             var jsonPath = config.template.json;
-            return config.url + jsonPath + config.queryString;
+            return config.urlMutation(config.url + jsonPath + config.queryString);
         }
     };
 });

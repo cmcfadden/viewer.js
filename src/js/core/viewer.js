@@ -219,7 +219,12 @@
         // the url to load the assets from (required)
         url: null,
 
-        // document viewer layout
+        // function to mutate URLs (generally to sign them) before they're called
+
+        urlMutation: function(url) { return url; },
+
+
+         // document viewer layout
         layout: LAYOUT_VERTICAL,
 
         // initial zoom level

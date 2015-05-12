@@ -63,7 +63,7 @@ Crocodoc.addDataProvider('stylesheet', function(scope) {
          */
         getURL: function () {
             var cssPath = config.template.css;
-            return config.url + cssPath + config.queryString;
+            return config.urlMutation(config.url + cssPath + config.queryString);
         },
 
         /**

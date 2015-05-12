@@ -22,6 +22,7 @@ module('Data Provider: page-svg', {
         };
         this.config = {
             url: '',
+            urlMutation: function(url) { return url; },
             template: {
                 svg: 'page-{{page}}.svg'
             },

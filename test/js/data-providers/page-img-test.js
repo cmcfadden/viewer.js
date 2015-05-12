@@ -22,6 +22,7 @@ module('Data Provider: page-img', {
         };
         this.config = {
             url: '',
+            urlMutation: function(url) { return url; },
             template: {
                 img: 'page-{{page}}.png'
             },

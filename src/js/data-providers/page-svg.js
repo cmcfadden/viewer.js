@@ -118,7 +118,7 @@ Crocodoc.addDataProvider('page-svg', function(scope) {
          */
         getURL: function (pageNum) {
             var svgPath = util.template(config.template.svg, { page: pageNum });
-            return config.url + svgPath + config.queryString;
+            return config.urlMutation(config.url + svgPath + config.queryString);
         },
 
         /**

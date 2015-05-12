@@ -81,7 +81,7 @@ Crocodoc.addDataProvider('page-text', function(scope) {
          */
         getURL: function (pageNum) {
             var textPath = util.template(config.template.html, { page: pageNum });
-            return config.url + textPath + config.queryString;
+            return config.urlMutation(config.url + textPath + config.queryString);
         },
 
         /**

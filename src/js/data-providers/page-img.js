@@ -75,7 +75,7 @@ Crocodoc.addDataProvider('page-img', function(scope) {
          */
         getURL: function (pageNum) {
             var imgPath = util.template(config.template.img, { page: pageNum });
-            return config.url + imgPath + config.queryString;
+            return config.urlMutation(config.url + imgPath + config.queryString);
         },
 
         /**

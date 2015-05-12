@@ -17,6 +17,7 @@ module('Data Provider: metadata', {
         };
         this.config = {
             url: '',
+            urlMutation: function(url) { return url; },
             template: {
                 json: 'info.json'
             },

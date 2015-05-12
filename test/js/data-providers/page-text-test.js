@@ -18,6 +18,7 @@ module('Data Provider: page-text', {
         };
         this.config = {
             url: '',
+            urlMutation: function(url) { return url; },
             template: {
                 html: 'text-{{page}}.html'
             },
